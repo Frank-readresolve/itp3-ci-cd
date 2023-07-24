@@ -1,7 +1,5 @@
 const target = document.getElementById("target");
 
-const url = "http://localhost:8080/";
-
 async function getData() {
     const envResponse = await fetch("./env.json");
     const envJson = await envResponse.json();
@@ -9,8 +7,8 @@ async function getData() {
     const options = {
         method: "get"
     }
-    const response = await fetch(url, options);
+    const response = await fetch(url + "users", options);
     const data = await response.json();
-    target.innerHTML = data;
+    target.innerHTML = data[0].name + " " + data[1].name + " " + data[2].name;
     console.log(data);
 }
