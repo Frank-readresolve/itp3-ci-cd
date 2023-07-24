@@ -5,4 +5,4 @@ INSERT INTO users
 	VALUES
 	('Ewa'),
 	('Thomas'),
-	('Saba');
+	('Lisa');
