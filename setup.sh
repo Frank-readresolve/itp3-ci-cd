@@ -58,7 +58,7 @@ if [ -z $optionnal ]
 then 
     echo "No optionnal argument"
 else    
-    options=$(echo "needs" | tr "," "\n")
+    options=$(echo "$needs" | tr "," "\n")
     cd /tmp/
     mkdir $name
     cd $name
