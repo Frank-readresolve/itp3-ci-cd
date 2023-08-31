@@ -12,7 +12,7 @@ then
     cd $name
     mkdir api
 
-    echo "Directories setup and api created for app: " $name
+    echo "Directories api created for app: " $name
 
     cd /var/lock/
     mkdir $name
