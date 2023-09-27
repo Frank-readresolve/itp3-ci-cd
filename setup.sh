@@ -50,6 +50,11 @@ then
     mkdir ui
 
     echo "Directory for env.json created for app: " $name
+
+    cd /var/log/apache2/
+    mkdir $name.readresolve.tech
+
+    echo "Directory for apache logs created"
 else
     echo "No directory for ui"
 fi
